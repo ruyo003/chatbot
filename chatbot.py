@@ -80,8 +80,14 @@ else:
 
 # frequently asked questions
 
-question = input("do you have any additional questions: ")
+question = input("if you have any more questions, feel free to ask or press q to quit: ").lower()
 
 if question == 'how is learning in this institution':
     print('this institution is among the top 5 franked in our country!')
+elif question == 'where can i find the school library':
+    print('use the school map to navigate through the school')
+elif question == 'q':
+    print('quitting..')
+else:
+    print('contact support for more information!')
 
