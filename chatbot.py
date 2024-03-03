@@ -1,9 +1,15 @@
+# this app intends to help a new students in campus
+# based on the colour they like the app will recommend some activities to them
+# the app also recommends some activities to any student of 22 years and below
+# it also cover some frequently asked questions
+
 
 print('''welcome to HeyPal, your all in one app that makes your freshman journey
 easier to navigate!
 please enter your credentials below to get started
 ''')
 
+# taking inputs from the user
 name = input('please enter your name: ').lower()
 age = int(input('please enter your age: '))
 colour = input('please enter your favourite colour: ').lower()
@@ -13,6 +19,7 @@ hello {name}! I can see that your favourite colour is {colour}.
 Based on your choice, below are a few suggestion on clubs you could join.
 ''')
 
+# giving recommendation for colour green
 if colour == 'green':
     print('i see your favourite colour is green, check out the following club options you can join: ')
     print('''
@@ -20,6 +27,8 @@ if colour == 'green':
 2. our green themed hockey club.
 3. our green themed book club.
     ''')
+
+# giving recommendation for colour green
 elif colour == 'red':
     print('i see your favourite colour is green, check out the following club options you can join: ')
     print('''
@@ -27,6 +36,8 @@ elif colour == 'red':
 2. our boxing club.
 3. our red colour themed drama club
 ''')
+
+# giving recommendation for colour green
 elif colour == 'blue':
     print('i see your favourite colour is blue, check out the following club options you can join: ')
     print('''
@@ -34,6 +45,8 @@ elif colour == 'blue':
 2. our deep sea exploration club
 3. our blue themed art club
 ''')
+
+# giving recommendation for colour green
 elif colour == 'yellow':
     print('i see your favourite colour is yellow, check out the following club options you can join: ')
     print('''
@@ -45,6 +58,8 @@ elif colour == 'yellow':
 else:
     print("i'm not sure if that was a colour you have entered, please try again. ")
 
+
+# giving recommendation for students of 22 years and below
 if age <= 22:
     print('here are some events you might fancy:')
     print('''
@@ -54,6 +69,7 @@ if age <= 22:
 4. youth service volunteer
 ''')
 
+# giving recommendation for students that are above 22 years
 else:
     print('here are a few suggestions that might interest you: ')
     print('''
